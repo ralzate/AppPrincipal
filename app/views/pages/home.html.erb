@@ -366,9 +366,12 @@ $(document).ready(function () {
                                             </div>
                                         </div>
                                         <%= f.hidden_field :type_user, value: "Persona" %>
-
+					        <style type="text/css">
+.guardar{
+width:150px;}
+</style>
                                      <button type="button" class="btn btn-info  btn-lg" data-dismiss="modal">Cerrar</button>
-                                <%= f.submit "Guardar Datos", :class => 'btn btn-primary  btn-lg' %>
+                                <%= f.submit "Guardar Datos", :class => 'btn btn-primary  btn-lg guardar' %>
                                 </div>
                             </div>
                         </div>
@@ -1659,7 +1662,7 @@ sup {
     -webkit-transition:  all .3s ease;
 }
 .pricing-table:hover>.panel>.controle-header>.panel-title-landing {
-    color: #fff !important;
+    color: black !important;
     -webkit-transition:  all .3s ease;
 }
 .pricing-table:hover>.panel>.panel-body-landing>.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
